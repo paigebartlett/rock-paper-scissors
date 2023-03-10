@@ -10,7 +10,6 @@ function getComputerChoice() {
     else {
         computerChoice = "scissors";
     }
-    console.log(computerChoice);
     return computerChoice;
 }
 
