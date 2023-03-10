@@ -18,11 +18,13 @@ function getPlayerSelection() {
     if (selection != "rock" && selection != "paper" && selection != "scissors") {
         selection = (prompt("That's not a valid answer! Choose rock, paper, or scissors")).toLowerCase();
     }
+    return selection;
 }
 
 function playRound(playerSelection, computerSelection) {
+    console.log(playerSelection);
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
-    return `You win! ${playerSelection} beats ${computerSelection}`;
+        return `You win! ${playerSelection} beats ${computerSelection}`;
     }
     else {
         return `You lose :( ${computerSelection} beats ${playerSelection})`;
