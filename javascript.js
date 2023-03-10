@@ -53,7 +53,7 @@ function game() {
     playerScore = 0;
     computerScore = 0; 
     for (let i = 0; i < 5; i++) {
-        playRound;
+        playRound();
     }
     return `Final score: Player: ${playerScore} & Computer: ${computerScore}`;
 }
