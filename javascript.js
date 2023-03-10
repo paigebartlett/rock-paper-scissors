@@ -29,4 +29,4 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-playRound(getPlayerSelection(),getComputerChoice());
+console.log(playRound(getPlayerSelection(),getComputerChoice()));;
