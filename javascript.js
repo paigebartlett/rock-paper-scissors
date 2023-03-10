@@ -21,15 +21,24 @@ function getPlayerSelection() {
     return selection;
 }
 
+function capitalize(inputString) {
+    firstLetter = inputString.slice(0,1);
+                firstLetter = firstLetter.toUpperCase();
+                restOfString = inputString.slice(1)
+                restOfString = restOfString.toLowerCase();
+
+                return firstLetter + restOfString;
+}
+
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
-        return `You win! ${playerSelection} beats ${computerSelection}.`;
+        return `You win! ${capitalize(playerSelection)} beats ${computerSelection}.`;
     }
     else if (playerSelection === computerSelection) {
         return `It's a tie! You both choose ${playerSelection}.`;
     }
     else {
-        return `You lose :( ${computerSelection} beats ${playerSelection}.`;
+        return `You lose :( ${capitalize(computerSelection)} beats ${playerSelection}.`;
     }
 }
 
