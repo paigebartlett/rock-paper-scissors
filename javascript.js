@@ -22,7 +22,6 @@ function getPlayerSelection() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    console.log(playerSelection);
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
         return `You win! ${playerSelection} beats ${computerSelection}`;
     }
