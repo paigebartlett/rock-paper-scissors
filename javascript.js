@@ -1,3 +1,6 @@
+let playerScore; 
+let computerScore; 
+
 function getComputerChoice() {
     let randomBelowThree = Math.floor(Math.random() * 3);
     let computerChoice;
@@ -45,9 +48,6 @@ function playRound(playerSelection, computerSelection) {
 }
 
 console.log(playRound(getPlayerSelection(),getComputerChoice()));;
-
-let playerScore; 
-let computerScore; 
 
 function game() {
     playerScore = 0;
