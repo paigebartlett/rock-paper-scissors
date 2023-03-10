@@ -43,3 +43,6 @@ function playRound(playerSelection, computerSelection) {
 }
 
 console.log(playRound(getPlayerSelection(),getComputerChoice()));;
+
+let playerScore; 
+let computerScore; 
