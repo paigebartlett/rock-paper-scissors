@@ -40,7 +40,7 @@ function playRound(playerSelection, computerSelection) {
     }
     else {
         return `You lose :( ${capitalize(computerSelection)} beats ${playerSelection}.`;
-        computerScore++:
+        computerScore++;
     }
 }
 
