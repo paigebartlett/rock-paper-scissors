@@ -55,4 +55,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
         playRound;
     }
+    return `Final score: Player: ${playerScore} & Computer: ${computerScore}`;
 }
+
+console.log(game());
