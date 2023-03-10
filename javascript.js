@@ -1,7 +1,7 @@
 function getComputerChoice(randomNumber(3)) {
     let randomBelowThree = Math.floor(Math.random * 3);
-    console.log(randomBelowThree)
-    console.log(computerChoice)
+    console.log(randomBelowThree);
+    console.log(computerChoice);
     if (randomBelowThree === 0) {
         computerChoice = "rock";
     }
@@ -11,7 +11,7 @@ function getComputerChoice(randomNumber(3)) {
     else {
         computerChoice = "scissors";
     }
-    console.log(computerChoice)
+    console.log(computerChoice);
     return computerChoice;
 }
 
