@@ -58,7 +58,17 @@ function game() {
             computerScore++;
         }
     }
-    return `Final score: Player: ${playerScore} & Computer: ${computerScore}`;
+    let winner; 
+    if (playerScore > computerScore) {
+        winner = "player.";
+    }
+    else if (computerScore < playerScore){
+        winner = "computer."
+    }
+    else {
+        winner = "no one. It's a tie!"
+    }
+    return `Final score: Player: ${playerScore} & Computer: ${computerScore} The winner is ${winner}`;
 }
 
 console.log(game());
