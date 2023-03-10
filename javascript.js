@@ -47,13 +47,11 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-console.log(playRound(getPlayerSelection(),getComputerChoice()));;
-
 function game() {
     playerScore = 0;
     computerScore = 0; 
     for (let i = 0; i < 5; i++) {
-        playRound();
+        console.log(playRound(getPlayerSelection(),getComputerChoice()));
     }
     return `Final score: Player: ${playerScore} & Computer: ${computerScore}`;
 }
