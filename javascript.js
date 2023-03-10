@@ -24,7 +24,7 @@ function getPlayerSelection() {
 function capitalize(inputString) {
     firstLetter = inputString.slice(0,1);
                 firstLetter = firstLetter.toUpperCase();
-                restOfString = inputString.slice(1)
+                restOfString = inputString.slice(1);
                 restOfString = restOfString.toLowerCase();
 
                 return firstLetter + restOfString;
