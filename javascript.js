@@ -18,10 +18,10 @@ function getComputerChoice() {
 
 function getPlayerSelection() {
     let selection = (prompt("Choose rock, paper, or scissors")).toLowerCase();
-    if (selection != "rock" && selection != "paper" && selection != "scissors") {
+    while (selection != "rock" && selection != "paper" && selection != "scissors") {
         selection = (prompt("That's not a valid answer! Choose rock, paper, or scissors")).toLowerCase();
     }
-    return selection;
+        return selection;
 }
 
 function capitalize(inputString) {
