@@ -51,10 +51,11 @@ function game() {
     playerScore = 0;
     computerScore = 0; 
     for (let i = 0; i < 5; i++) {
-        if((playRound(getPlayerSelection(),getComputerChoice())) === "player") {
+        let roundResult = (playRound(getPlayerSelection(),getComputerChoice()));
+        if(roundResult === "player") {
             playerScore++;
         }
-        else if (((playRound(getPlayerSelection(),getComputerChoice()))) === "computer") {
+        else if (roundResult === "computer") {
             computerScore++;
         }
     }
