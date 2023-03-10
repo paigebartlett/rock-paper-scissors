@@ -66,7 +66,5 @@ function game() {
     else {
         winner = "no one. It's a tie!"
     }
-    return `Final score: Player: ${playerScore} & Computer: ${computerScore} The winner is ${winner}`;
+    console.log(`Final score: Player: ${playerScore} & Computer: ${computerScore} The winner is ${winner}`);
 }
-
-console.log(game());
