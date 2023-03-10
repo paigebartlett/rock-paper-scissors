@@ -14,8 +14,11 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-
-function playRound(getComputerChoice()) {
+function playRound() {
+    computerChoice = getComputerChoice();
     playerSelection = (prompt("Choose rock, paper, or scissors")).toLowerCase();
+    if (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors") {
+        playerSelection = (prompt("That's not a valid answer! Choose rock, paper, or scissors")).toLowerCase();
+    }
 
 }
