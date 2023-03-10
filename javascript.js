@@ -14,4 +14,8 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-playerSelection = (prompt("Choose rock, paper, or scissors")).toLowerCase();
+
+function playRound(getComputerChoice()) {
+    playerSelection = (prompt("Choose rock, paper, or scissors")).toLowerCase();
+
+}
