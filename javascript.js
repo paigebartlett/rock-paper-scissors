@@ -35,15 +35,15 @@ function capitalize(inputString) {
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
-        return `You win! ${capitalize(playerSelection)} beats ${computerSelection}.`;
         playerScore++;
+        return `You win! ${capitalize(playerSelection)} beats ${computerSelection}.`;
     }
     else if (playerSelection === computerSelection) {
         return `It's a tie! You both choose ${playerSelection}.`;
     }
     else {
-        return `You lose :( ${capitalize(computerSelection)} beats ${playerSelection}.`;
         computerScore++;
+        return `You lose :( ${capitalize(computerSelection)} beats ${playerSelection}.`;
     }
 }
 
