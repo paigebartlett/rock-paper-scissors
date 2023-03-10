@@ -35,15 +35,15 @@ function capitalize(inputString) {
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
-        playerScore++;
-        return `You win! ${capitalize(playerSelection)} beats ${computerSelection}.`;
+        console.log(`You win! ${capitalize(playerSelection)} beats ${computerSelection}.`);
+        return "player";
     }
     else if (playerSelection === computerSelection) {
-        return `It's a tie! You both choose ${playerSelection}.`;
+        console.log(`It's a tie! You both choose ${playerSelection}.`);
     }
     else {
-        computerScore++;
-        return `You lose :( ${capitalize(computerSelection)} beats ${playerSelection}.`;
+        console.log(`You lose :( ${capitalize(computerSelection)} beats ${playerSelection}.`);
+        return "computer";
     }
 }
 
@@ -51,7 +51,12 @@ function game() {
     playerScore = 0;
     computerScore = 0; 
     for (let i = 0; i < 5; i++) {
-        console.log(playRound(getPlayerSelection(),getComputerChoice()));
+        if((playRound(getPlayerSelection(),getComputerChoice())) === "player") {
+            playerScore++;
+        }
+        else if (((playRound(getPlayerSelection(),getComputerChoice()))) === "computer") {
+            computerScore++;
+        }
     }
     return `Final score: Player: ${playerScore} & Computer: ${computerScore}`;
 }
