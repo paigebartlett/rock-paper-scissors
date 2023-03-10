@@ -1,4 +1,4 @@
-function getComputerChoice(randomNumber(3)) {
+function getComputerChoice() {
     let randomBelowThree = Math.floor(Math.random * 3);
     console.log(randomBelowThree);
     console.log(computerChoice);
