@@ -58,13 +58,15 @@ function game() {
     }
     let winner; 
     if (playerScore > computerScore) {
-        winner = "player.";
+        winner = "you!";
     }
     else if (playerScore < computerScore){
-        winner = "computer."
+        winner = "the computer."
     }
     else {
         winner = "no one. It's a tie!"
     }
     console.log(`Final score: Player: ${playerScore} & Computer: ${computerScore} The winner is ${winner}`);
 }
+
+game();
