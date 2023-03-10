@@ -23,13 +23,13 @@ function getPlayerSelection() {
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
-        return `You win! ${playerSelection} beats ${computerSelection}`;
+        return `You win! ${playerSelection} beats ${computerSelection}.`;
     }
     else if (playerSelection === computerSelection) {
-        return `It's a tie! You both choose ${playerSelection}`;
+        return `It's a tie! You both choose ${playerSelection}.`;
     }
     else {
-        return `You lose :( ${computerSelection} beats ${playerSelection})`;
+        return `You lose :( ${computerSelection} beats ${playerSelection}.`;
     }
 }
 
