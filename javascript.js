@@ -63,7 +63,7 @@ function game() {
     if (playerScore > computerScore) {
         winner = "player.";
     }
-    else if (computerScore < playerScore){
+    else if (playerScore < computerScore){
         winner = "computer."
     }
     else {
