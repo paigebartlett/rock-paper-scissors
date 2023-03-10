@@ -21,6 +21,13 @@ function getPlayerSelection() {
     }
 }
 
-function playRound() {
-    computerChoice = getComputerChoice();
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" &&& computerSelection === "paper") {
+    return `You win! ${playerSelection} beats ${computerSelection}`;
+    }
+    else {
+        return `You lose :( ${computerSelection} beats ${playerSelection})`;
+    }
 }
+
+playRound(getPlayerSelection(),getComputerChoice());
