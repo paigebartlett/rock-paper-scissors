@@ -46,3 +46,8 @@ console.log(playRound(getPlayerSelection(),getComputerChoice()));;
 
 let playerScore; 
 let computerScore; 
+
+function game() {
+    playerScore = 0;
+    computerScore = 0; 
+}
