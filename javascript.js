@@ -1,5 +1,6 @@
 function getComputerChoice() {
-    let randomBelowThree = Math.floor(Math.random * 3);
+    let randomBelowThree = Math.floor(Math.random() * 3);
+    let computerChoice;
     console.log(randomBelowThree);
     console.log(computerChoice);
     if (randomBelowThree === 0) {
